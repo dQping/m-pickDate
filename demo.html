@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>日期选择</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./pickDate.js"></script>
+    <style type="text/css">
+
+        .list {
+            margin: 50px 25px 0 25px;
+            text-align: center;
+        }
+        .list li {
+            list-style: none;
+            border: #CCCCCC solid 1px;
+            height: 32px;
+            line-height: 32px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    
+            
+       
+    
+    <h2 style="text-align: center;margin: 25px 0;">选择日期插件</h2>
+    <ul class="list">
+        <li id="select_1">选择日期-设置全部参数3</li>
+        <li id="select_2">选择日期-2列</li>
+        <li id="select_3">选择日期-1列</li>
+    </ul>
+    <script type="text/javascript">
+        // 传入参数日期格式支持 ‘YYYY/MM/DD’  ‘YYYY-MM-DD’  ‘YYYY.MM.DD’ 
+        /*设置全部参数*/
+        let pd1 = new PickDate('#select_1', {
+            start: '2012-5-20', // 时间段开始时间
+            end: '2013-5-20', // 时间段结束时间
+            pick:'2013-1-20',  // 默认选中时间
+            weekend:false, // 去除周末，默认true不去除
+            format: '-',    
+            title: '选择时间',
+            column: 3,  // 值为1-3，表示年月日,默认为3
+            done: function (data) {
+                document.querySelector('#select_1').innerHTML = data;
+                console.log('设置全部参数');
+                console.log(data);
+            }
+        });
+
+        /*2列*/
+        let pd2 = new PickDate('#select_2', {
+            column: 2,
+            done: function (data) {
+                document.querySelector('#select_2').innerHTML = data;
+                console.log('设置全部参数');
+                console.log(data);
+            }
+        });
+
+        /*1列*/
+        let pd3 = new PickDate('#select_3', {
+            column: 1,
+            done: function (data) {
+                document.querySelector('#select_3').innerHTML = data;
+                console.log('设置全部参数');
+                console.log(data);
+            }
+        });
+    </script>
+</body>
+
+</html>
