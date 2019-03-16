@@ -1,5 +1,7 @@
 # 手机端时间选择插件dqp-pickDate
 
+示例效果请查看：https://dqping.github.io/dqp-pickDate/demo.html
+
 直接下载即可使用，插件没有依赖，用原声 javascript 写的，用到了部分 es6 的语法，如果对里面的一些 es6 语法不了解，可以查阅阮老师的 [es6入门](http://es6.ruanyifeng.com/)。
 
 这个是手机端的时间选择插件，支持选择年份、年月、年月日三种模式效果请使用手机模式查看，不支持 pc 端，如果想要支持 pc 端，可以参考源码中的 touch 事件，绑定相应的 mousedown,mousemove,mouseup 等事件就可以实现。
