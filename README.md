@@ -1,4 +1,4 @@
-# 手机端时间选择插件dqp-pickDate
+# 手机端日期时间选择插件
 
 示例效果请查看：https://dqping.github.io/m-pickDate/demo.html
 
