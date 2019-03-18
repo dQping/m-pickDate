@@ -42,11 +42,10 @@
         // 传入参数日期格式支持 ‘YYYY/MM/DD’  ‘YYYY-MM-DD’  ‘YYYY.MM.DD’ 
         /*设置全部参数*/
         let pd1 = new PickDate('#select_1', {
-            start: '2012-5-20', // 时间段开始时间
-            end: '2013-5-20', // 时间段结束时间
-            pick:'2013-1-20',  // 默认选中时间
-            weekend:false, // 去除周末，默认true不去除
-            format: '-',    
+            start: '2012/5/20', // 时间段开始时间
+            end: '2013/5/20', // 时间段结束时间
+            pick:'2013/1/20',  // 默认选中时间
+            weekend:false, // 去除周末，默认true不去除  
             title: '选择时间',
             column: 3,  // 值为1-3，表示年月日,默认为3
             done: function (data) {
