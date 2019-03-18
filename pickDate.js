@@ -27,8 +27,8 @@
         }
         setPick(pick) {
             let column = this.options.column;
-            let reg = /^\d{4}\/|\-|\.\d{1,2}\/|\-|\.\d{1,2}$/;
-            if (column === 1) reg = /^\d{4}\/|\-|\.\d{1,2}$/;
+            let reg = /^\d{4}\/\d{1,2}\/\d{1,2}$/;
+            if (column === 1) reg = /^\d{4}\/\d{1,2}$/;
             if (column === 2) reg = /^\d{4}$/;
             if(!reg.test(pick)) return;
             let thePick = new Date(pick);
@@ -394,9 +394,9 @@
 
     }
     function testDate(str, column) {
-        let reg = /^\d{4}\/|\-|\.\d{1,2}\/|\-|\.\d{1,2}$/;
+        let reg = /^\d{4}\/\d{1,2}\/\d{1,2}$/;
         if (column === 1) {
-            reg = /^\d{4}\/|\-|\.\d{1,2}$/
+            reg = /^\d{4}\/\d{1,2}$/
         }
         if (column === 2) {
             reg = /^\d{4}$/
