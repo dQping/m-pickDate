@@ -13,7 +13,6 @@
 + end: String 可选时间段结束时间，不传默认当前时间；
 + pick: String 初始化默认选中时间，不传默认当前时间，如果当前时间不在可选时间段内，默认时间段开始时间；
 + weekend: boolean 值，表示是否去除可选时间段的周末日期，true 表示不去除， false 表示去除，默认为 true；
-+ format: String 日期字符串的组合格式，值可以是 '-' 或 '/' 或 '.' ,默认为 '/' ；
 + title: String 弹窗标题
 + column: Number 值为1-3，值为 1 表示选择年份，值为 2 表示 选择年月，值为 3 表示选择年月日；
 + done: function（response） 用户选择完毕，点击完成后执行的回调函数， 参数 response 的值为用户所选的日期；
