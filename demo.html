@@ -38,7 +38,6 @@
         <li id="select_2">选择日期-2列</li>
         <li id="select_3">选择日期-1列</li>
     </ul>
-    <input type="text">
     <script type="text/javascript">
         // 传入参数日期格式支持 ‘YYYY/MM/DD’  ‘YYYY-MM-DD’  ‘YYYY.MM.DD’ 
         /*设置全部参数*/
@@ -76,21 +75,7 @@
             }
         });
         
-         var xStart, xEnd, yStart, yEnd;
-
-        document.addEventListener("touchstart", function (evt) {
-            xStart = evt.touches[0].pageX;
-            yStart = evt.touches[0].pageY;
-        }, false);
-
-         document.addEventListener('touchmove', function (evt) {
-            xEnd = evt.touches[0].pageX;
-            yEnd = evt.touches[0].pageY;
-            //左右滑动
-            if(Math.abs(xStart - xEnd) > Math.abs(yStart - yEnd)){
-                evt.preventDefault();
-            }
-        }, false);
+       
     </script>
 </body>
 
